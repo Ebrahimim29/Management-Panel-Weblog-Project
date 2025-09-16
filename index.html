@@ -160,7 +160,27 @@
     </div>
 
     <!-- Edit Modal -->
-    <div>
+    <div id="editModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title">ویرایش مقاله</h3>
+                <button class="close" onclick="closeEditModal()">&times;</button>
+            </div>
+            <form id="editForm">
+                <div class="form-group">
+                    <label for="articleTitle" class="form-lable">عنوان دوره</label>
+                    <input type="text" id="articleTitle" class="form-input" required>
+                </div>
+                <div class="form-group">
+                    <label for="authorName" class="form-lable">اسم نفر</label>
+                    <input type="text" id="authorName" class="form-input" required>
+                </div>
+                <div class="modal-buttons">
+                    <button class="btn btn-secondary" type="button" onclick="closeEditModal()">لغو</button>
+                    <button class="btn btn-secondary" type="submit">ذخیره تغییرات</button>
+                </div>
+            </form>
+        </div>
 
     </div>
 
