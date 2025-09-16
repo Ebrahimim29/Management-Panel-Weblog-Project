@@ -106,11 +106,57 @@
         </div>
 
         <!-- Recent Posts Table -->
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>عنوان دوره</th>
+                        <th>اسامی نفرات</th>
+                        <th>تاریخ برگزاری دوره </th>
+                        <th>وضعیت</th>
+                        <th>عملیات</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Html & Css</td>
+                        <td>محمد میرابراهیمی</td>
+                        <td>1403/06/20</td>
+                        <td><span class="status-badge status-published">پرداخت شده</span></td>
+                        <td>
+                            <button class="edit-btn" onclick="openEditModal('Html & Css','محمد میرابراهیمی', 0)">
+                                <i class="fas fa-edit" style="color: var(--primary-color);"></i>
+                            </button>
+                            <button class="delete-btn">
+                                <i class="fas fa-trash" style="color: var(--danger);"></i>
+                            </button>
+                        </td>
+                    </tr>
+                        <td>JavaScript</td>
+                        <td>جمیل حسینی</td>
+                        <td>1404/07/10</td>
+                        <td><span class="status-badge status-draft">پرداخت نشده</span></td>
+                        <td>
+                            <button class="edit-btn" onclick="openEditModal('Html & Css','محمد میرابراهیمی', 0)">
+                                <i class="fas fa-edit" style="color: var(--primary-color);"></i>
+                            </button>
+                             <button class="delete-btn">
+                                <i class="fas fa-trash" style="color: var(--danger);"></i>
+                            </button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </main>
 
     <!-- Animated Message -->
-    <div>
-
+    <div class="message-container">
+        <div class="message-icon">
+            <i class="fas fa-star"></i>
+        </div>
+        <div class="message-text">سلام، خوش آمدید😎🎉</div>
+        <div class="message-subtext">با تلاش و پشتکار به موفقیت می رسی</div>
     </div>
 
     <!-- Edit Modal -->
