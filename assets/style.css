@@ -566,5 +566,5 @@ th {
 
 /* Card loading animation */
 .card {
-    opacity: 0;
+    /* opacity: 0; */
 }
